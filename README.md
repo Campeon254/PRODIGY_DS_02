@@ -111,6 +111,8 @@ Cross-validation (testing on different splits of the data), Random Forest consis
 
 The detailed classification report from cross-validation shows that the model performs well across all species, with high precision, recall, and F1-scores.
 
+- On a stratified 20% hold-out, LR/RF achieved 100%; 5-fold CV mean ≈ 97% ± (std), which is the more realistic generalization estimate.
+
 ## Model Saving and Loading
 
 The model was saved using the `joblib` library, which allows for easy serialization and deserialization of Python objects. This enables the model to be reused without the need for retraining, saving time and computational resources.
